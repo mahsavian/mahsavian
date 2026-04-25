@@ -7,19 +7,51 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
     <style>
         :root { --primary: #1a5fb4; }
+        
+        /* This forces all paragraphs and list items to be justified */
+        body, p, li, section { 
+            text-align: justify !important; 
+            text-justify: inter-word;
+        }
+
+        /* We keep headers and the hero section aligned properly so they don't look weird */
+        h1, h2, h3, .hero, .hero p { 
+            text-align: center !important; 
+        }
+
+        /* General layout settings */
         body { 
-    padding: 40px 20px; 
-    max-width: 900px; 
-    margin: auto; 
-    text-align: justify; 
-    text-justify: inter-word; }
-        h1, h2, h3 { 
-    text-align: left; 
-}
-        .hero { text-align: center; padding: 40px 0; border-bottom: 1px solid #e1e1e1; }
-        .tag { background: #eef2f7; padding: 5px 12px; border-radius: 5px; font-size: 0.8rem; margin-right: 5px; color: #1a5fb4; font-weight: bold; }
-        .project-card { border: 1px solid #eee; padding: 20px; border-radius: 10px; margin-bottom: 20px; }
-        .highlight { color: #d32f2f; font-weight: bold; }
+            padding: 40px 20px; 
+            max-width: 900px; 
+            margin: auto; 
+        }
+        
+        .hero { 
+            padding: 40px 0; 
+            border-bottom: 1px solid #e1e1e1; 
+        }
+
+        .tag { 
+            background: #eef2f7; 
+            padding: 5px 12px; 
+            border-radius: 5px; 
+            font-size: 0.8rem; 
+            margin-right: 5px; 
+            color: #1a5fb4; 
+            font-weight: bold; 
+        }
+
+        .project-card { 
+            border: 1px solid #eee; 
+            padding: 20px; 
+            border-radius: 10px; 
+            margin-bottom: 20px; 
+        }
+
+        .highlight { 
+            color: #d32f2f; 
+            font-weight: bold; 
+        }
     </style>
 </head>
 <body>
