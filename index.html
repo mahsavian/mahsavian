@@ -8,29 +8,35 @@
     <style>
         :root { --primary: #1a5fb4; }
         
-        /* This forces all paragraphs and list items to be justified */
-        body, p, li, section { 
-            text-align: justify !important; 
-            text-justify: inter-word;
-        }
-
-        /* We keep headers and the hero section aligned properly so they don't look weird */
-        h1, h2, h3, .hero, .hero p { 
-            text-align: center !important; 
-        }
-
-        /* General layout settings */
+        /* 1. LAYOUT & JUSTIFICATION */
         body { 
             padding: 40px 20px; 
             max-width: 900px; 
             margin: auto; 
         }
-        
+
+        p, li { 
+            text-align: justify !important; 
+            text-justify: inter-word; 
+        }
+
+        /* 2. HEADINGS (Fixing the Centering issue) */
+        h2, h3 { 
+            text-align: left !important; 
+            margin-top: 2rem;
+        }
+
+        /* 3. HERO SECTION (This stays centered) */
         .hero { 
+            text-align: center !important; 
             padding: 40px 0; 
             border-bottom: 1px solid #e1e1e1; 
         }
+        .hero h1, .hero p { 
+            text-align: center !important; 
+        }
 
+        /* 4. DESIGN ELEMENTS */
         .tag { 
             background: #eef2f7; 
             padding: 5px 12px; 
@@ -40,29 +46,38 @@
             color: #1a5fb4; 
             font-weight: bold; 
         }
-
         .project-card { 
             border: 1px solid #eee; 
             padding: 20px; 
             border-radius: 10px; 
             margin-bottom: 20px; 
+            text-align: left !important;
         }
-
-        .highlight { 
-            color: #d32f2f; 
-            font-weight: bold; 
+        .highlight { color: #d32f2f; font-weight: bold; }
+        
+        img.profile-pic {
+            width: 150px; 
+            height: 150px; 
+            border-radius: 50%; 
+            object-fit: cover; 
+            margin-bottom: 20px; 
+            border: 3px solid #1a5fb4; 
+            display: block; 
+            margin-left: auto; 
+            margin-right: auto;
         }
     </style>
 </head>
 <body>
 
     <header class="hero">
-<img src="profile.jpeg" alt="Mahsa Vian" style="width:150px; height:150px; border-radius:50%; object-fit:cover; margin-bottom:20px; border: 3px solid #1a5fb4; display: block; margin-left: auto; margin-right: auto;">        <h1>Mahsa Vian</h1>
+        <img src="profile.jpeg" alt="Mahsa Vian" class="profile-pic">
+        <h1>Mahsa Vian</h1>
         <p><strong>Visiting Scholar, University of Vienna</strong><br>
         Interdisciplinary Researcher in Science & Technology Studies (STS) | Digital Pedagogy Specialist</p>
-        <div>
-            <a href="mailto:vianmahsa@gmail.com" class="button">Email Me</a>
-            <a href="#" class="button secondary">Download CV (PDF)</a>
+        <div style="margin-top: 20px;">
+            <a href="mailto:vianmahsa@gmail.com" role="button">Email Me</a>
+            <a href="CV_Mahsa_Vian.pdf" role="button" class="secondary" target="_blank">Download CV (PDF)</a>
         </div>
     </header>
 
@@ -77,15 +92,13 @@
             <h2>Key Research & Digital Works</h2>
             
             <div class="project-card">
-    <h3>From BBS to Blackboard (Master Thesis)</h3>
-    <span class="tag">STS</span> <span class="tag">Digital Discourse Analysis</span> <span class="tag">Hacker Culture</span>
-    <p>
-        A socio-technical analysis of <em>Phrack Magazine</em> (1985-2016). This research investigated how early digital forums functioned as <strong>alternative epistemic cultures</strong>. The project won a publication award and mapped the "co-production" of technical expertise before the era of formal cybersecurity education.
-    </p>
-    <a href="https://thesis.unipd.it/handle/20.500.12608/91258" target="_blank" class="button outline" style="font-size: 0.8rem; padding: 5px 15px;">
-        View Official Thesis Repository (Padua)
-    </a>
-</div>
+                <h3>From BBS to Blackboard (Master Thesis)</h3>
+                <span class="tag">STS</span> <span class="tag">Digital Discourse Analysis</span> <span class="tag">Hacker Culture</span>
+                <p>A socio-technical analysis of <em>Phrack Magazine</em> (1985-2016). Investigated how early digital forums functioned as <strong>alternative epistemic cultures</strong>. This project mapped the "co-production" of technical expertise before the era of formal cybersecurity education.</p>
+                <a href="https://thesis.unipd.it/handle/20.500.12608/91258" target="_blank" role="button" class="outline" style="font-size: 0.8rem;">
+                    View Official Thesis Repository (Padua)
+                </a>
+            </div>
 
             <div class="project-card">
                 <h3>Theological Studies Online Museum</h3>
@@ -108,17 +121,9 @@
                 <li><strong>AI Integration:</strong> Expert in designing curricula that ethically integrate AI and digital tools into the classroom.</li>
             </ul>
         </section>
-
-        <section id="education">
-            <h2>Education</h2>
-            <ul>
-                <li><strong>MA in Historical Sciences (Mobility Studies)</strong> – University of Padova (101/110)</li>
-                <li><strong>Intensive German Language Program</strong> – Currently enrolled (Vienna)</li>
-            </ul>
-        </section>
     </main>
 
-    <footer>
+    <footer style="text-align: center; padding: 40px 0; border-top: 1px solid #eee;">
         <small>© 2026 Mahsa Vian | Built with GitHub Pages</small>
     </footer>
 
