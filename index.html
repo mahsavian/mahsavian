@@ -8,17 +8,12 @@
     <style>
         :root { --primary: #1a5fb4; }
         body { padding: 40px 20px; max-width: 900px; margin: auto; }
-        
-        /* Justified text for academic professionalism */
         p, li { text-align: justify !important; text-justify: inter-word; }
-        
         h2, h3 { text-align: left !important; margin-top: 2rem; color: var(--primary); }
         .hero { text-align: center !important; padding: 40px 0; border-bottom: 1px solid #e1e1e1; }
         .hero h1, .hero p { text-align: center !important; }
-        
         .tag { background: #eef2f7; padding: 5px 12px; border-radius: 5px; font-size: 0.8rem; margin-right: 5px; color: #1a5fb4; font-weight: bold; }
         .project-card { border: 1px solid #eee; padding: 25px; border-radius: 10px; margin-bottom: 25px; text-align: left !important; }
-        
         img.profile-pic { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; border: 4px solid #1a5fb4; display: block; margin-left: auto; margin-right: auto; }
         .button-group { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 15px; }
     </style>
@@ -39,64 +34,37 @@
     <main>
         <section id="about">
             <h2>The Narrative</h2>
-            <p>I am a researcher and educator bridging <strong>12 years of pedagogical practice</strong> with a scholarly focus on the "underground" origins of our digital world. My research is defined by a singular question: <strong>How does expertise survive the transition from informal, radical spaces to formal institutional structures?</strong></p>
-            <p>My work is anchored in my Master’s research at the <strong>University of Padua</strong>, where I conducted a socio-technical autopsy of the pre-web digital underground. My thesis, <em>"From BBS to Blackboard,"</em> utilized digital discourse analysis to map how early hacker forums functioned as alternative university systems for a generation of innovators.</p>
+            <p>I am a researcher and educator bridging <strong>12 years of pedagogical practice</strong> with a scholarly focus on the "underground" origins of our digital world. My research investigates how expertise survives the transition from informal, radical spaces to formal institutional structures.</p>
         </section>
 
         <section id="projects">
-            <h2>Key Research & Digital Works</h2>
+            <h2>Research & Digital Works</h2>
             
             <div class="project-card">
                 <h3>From BBS to Blackboard: The Pedagogy of the Exploit</h3>
                 <span class="tag">STS</span> <span class="tag">Corpus Linguistics</span> <span class="tag">Voyant Tools</span>
                 <p>
-                    This research evaluates the evolution of technical knowledge transfer through a comprehensive analysis of <strong>Phrack Magazine</strong>, a cornerstone of unauthorized technical documentation. By applying sociocultural learning theories to the domain of systems security, this thesis explores how technical identity and exploit methodologies are negotiated within decentralized networks. Utilizing <strong>Voyant Tools</strong> for corpus linguistics to analyze decades of publication data, the analysis highlights a paradox: while the magazine champions anti-authoritarian decentralization, its technical discourse maintains a rigid, culturally exclusive boundary. This work contributes to digital technical education by defining hacker rhetoric as a structured, high-stakes instructional system that governs the dissemination of specialized security intelligence.
+                    This research evaluates technical knowledge transfer through a longitudinal analysis of <strong>Phrack Magazine</strong>. Utilizing <strong>Voyant Tools</strong>, the study maps how technical identity is negotiated within decentralized networks. The analysis defines hacker rhetoric as a structured, high-stakes instructional system.
                 </p>
                 <div class="button-group">
-                    <a href="https://raw.githubusercontent.com/mahsavian/phrack-bbs-research/main/Thesis_Vian_Phrack_BBS.pdf" target="_blank" role="button" style="font-size: 0.8rem;">
-                        📄 View Full Thesis (PDF)
-                    </a>
-                    <a href="https://raw.githubusercontent.com/mahsavian/phrack-bbs-research/main/Presentation_Vian_Hacker_Pedagogy.pdf" target="_blank" role="button" class="secondary" style="font-size: 0.8rem;">
-                        📊 Presentation (PDF)
-                    </a>
-                    <a href="https://thesis.unipd.it/handle/20.500.12608/91258" target="_blank" role="button" class="outline" style="font-size: 0.8rem;">
-                        🏛️ Padua Archive
-                    </a>
+                    <a href="https://raw.githubusercontent.com/mahsavian/phrack-bbs-research/main/Thesis_Vian_Phrack_BBS.pdf" target="_blank" role="button" style="font-size: 0.8rem;">📄 Thesis (PDF)</a>
+                    <a href="https://raw.githubusercontent.com/mahsavian/phrack-bbs-research/main/Presentation_Vian_Hacker_Pedagogy.pdf" target="_blank" role="button" class="secondary" style="font-size: 0.8rem;">📊 Presentation (PDF)</a>
+                    <a href="https://thesis.unipd.it/handle/20.500.12608/91258" target="_blank" role="button" class="outline" style="font-size: 0.8rem;">🏛️ Archive</a>
                 </div>
             </div>
 
             <div class="project-card">
                 <h3>Geospatial Analysis: Non-EU Residences in Italy</h3>
-                <span class="tag">ArcGIS</span> <span class="tag">Big Data Visualization</span> <span class="tag">Demographics</span>
-                <p>
-                    Developed an interactive ArcGIS dashboard visualizing the distribution and legal status of non-EU residents in Italy for 2021. Utilizing proportional symbol mapping and data visualization across key administrative regions such as Lombardy and Veneto, the project facilitates a quantitative assessment of migration patterns and residency status.
-                </p>
-            </div>
-
-            <div class="project-card">
-                <h3>Shapes of Educational Gender Discrimination in Iran</h3>
-                <span class="tag">Gender Studies</span> <span class="tag">Policy Analysis</span> <span class="tag">STS</span>
-                <p>
-                    An investigation into institutionalized gender bias within the Iranian educational system[cite: 88]. This research maps multifaceted barriers, including university admission quotas that reserve at least 30% of seats for male students [cite: 104], and identifies significant gender representation gaps in textbooks—where male representation exceeds female nearly three to one[cite: 142]. The study also examines legal and social constraints on professional advancement, such as prohibitions against women serving as judges or in the military[cite: 169].
-                </p>
-            </div>
-
-            <div class="project-card">
-                <h3>Grave Injustice: NAGPRA and Repatriation Ethics</h3>
-                <span class="tag">Institutional Ethics</span> <span class="tag">Indigenous Rights</span>
-                <p>
-                    Analysis of the Native American Graves Protection and Repatriation Act (NAGPRA), focusing on the struggle for cultural preservation and institutional justice[cite: 254]. Through high-profile case studies like the Kennewick Man, the research explores the ethical tensions between scientific authority and Indigenous sovereignty[cite: 308]. It assesses the evolution of museum practices, particularly the role of repatriation departments in negotiating cultural affiliation based on biological and oral tradition evidence[cite: 323].
-                </p>
+                <span class="tag">ArcGIS</span> <span class="tag">Demographics</span>
+                <p>Developed an interactive ArcGIS dashboard visualizing the demographic distribution and legal status of non-EU residents in Italy for 2021.</p>
             </div>
 
             <div class="project-card">
                 <h3>Theological Studies Online Museum</h3>
-                <span class="tag">Digital Pedagogy</span> <span class="tag">UX Design</span> <span class="tag">Archival Science</span>
-                <p>Designed an interactive digital exhibit bridging historical theological archives with contemporary public engagement. Awarded <strong>30/30</strong> for its integration of pedagogical theory and technical execution, translating complex archival assets into a user-centric storytelling experience.</p>
+                <span class="tag">Digital Pedagogy</span> <span class="tag">Front-End Dev</span>
+                <p>Designed an interactive digital exhibit bridging historical archives with contemporary engagement. Awarded <strong>30/30</strong> for technical execution.</p>
                 <div class="button-group">
-                    <a href="https://mahsavian.github.io/theological-museum/" target="_blank" role="button" style="font-size: 0.8rem;">
-                        🏛️ View Live Museum
-                    </a>
+                    <a href="https://mahsavian.github.io/theological-museum/" target="_blank" role="button" style="font-size: 0.8rem;">🏛️ View Live Museum</a>
                 </div>
             </div>
         </section>
