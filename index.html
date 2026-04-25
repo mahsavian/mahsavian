@@ -14,20 +14,20 @@
             margin: auto; 
         }
 
-        /* Forces Justified Text */
+        /* Forces Justified Text for readability */
         p, li { 
             text-align: justify !important; 
             text-justify: inter-word; 
         }
 
-        /* Keeps Headers Left-Aligned */
+        /* Keeps Headers Left-Aligned for academic structure */
         h2, h3 { 
             text-align: left !important; 
             margin-top: 2rem;
             color: var(--primary);
         }
 
-        /* Hero section centered */
+        /* Hero section centered for personal presentation */
         .hero { 
             text-align: center !important; 
             padding: 40px 0; 
@@ -44,6 +44,7 @@
             color: #1a5fb4; 
             font-weight: bold; 
         }
+
         .project-card { 
             border: 1px solid #eee; 
             padding: 25px; 
@@ -60,6 +61,9 @@
         }
 
         .button-group { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 15px; }
+        
+        /* Direct PDF link style */
+        .pdf-link { font-size: 0.85rem !important; }
     </style>
 </head>
 <body>
@@ -89,12 +93,16 @@
                 <h3>From BBS to Blackboard (Master Thesis)</h3>
                 <span class="tag">STS</span> <span class="tag">Digital Discourse Analysis</span> <span class="tag">Hacker Culture</span>
                 <p>A socio-technical analysis of <em>Phrack Magazine</em>. This project mapped the "pedagogy of the exploit" and the co-production of technical expertise before the era of formal cybersecurity education.</p>
+                
                 <div class="button-group">
-                    <a href="https://github.com/mahsavian/phrack-bbs-research" target="_blank" role="button" style="font-size: 0.8rem;">
-                        📂 View Research Hub (PDF + PPT)
+                    <a href="https://raw.githubusercontent.com/mahsavian/phrack-bbs-research/main/Thesis_Vian_Phrack_BBS.pdf.pdf" target="_blank" role="button" class="pdf-link">
+                        📄 Full Thesis (PDF)
                     </a>
-                    <a href="https://thesis.unipd.it/handle/20.500.12608/91258" target="_blank" role="button" class="outline" style="font-size: 0.8rem;">
-                        🏛️ University Archive
+                    <a href="https://raw.githubusercontent.com/mahsavian/phrack-bbs-research/main/Presentation_Vian_Hacker_Pedagogy.pdf.pdf" target="_blank" role="button" class="pdf-link secondary">
+                        📊 Presentation (PDF)
+                    </a>
+                    <a href="https://thesis.unipd.it/handle/20.500.12608/91258" target="_blank" role="button" class="outline pdf-link">
+                        🏛️ Padua Archive
                     </a>
                 </div>
             </div>
@@ -102,7 +110,7 @@
             <div class="project-card">
                 <h3>Theological Studies Online Museum</h3>
                 <span class="tag">HTML/CSS</span> <span class="tag">UX Design</span>
-                <p>Designed an interactive digital exhibit bridging historical theological archives with public engagement. Awarded <strong>30/30</strong> for innovative digital pedagogy.</p>
+                <p>Designed an interactive digital exhibit bridging historical theological archives with public engagement. Awarded <strong>30/30</strong> for innovative digital pedagogy and geospatial storytelling.</p>
             </div>
         </section>
     </main>
