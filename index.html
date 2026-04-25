@@ -3,40 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahsa Vian | Digital STS & Knowledge Cultures</title>
+    <title>Mahsa Vian | Digital Knowledge Cultures</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
     <style>
         :root { --primary: #1a5fb4; }
         
-        /* 1. LAYOUT & JUSTIFICATION */
         body { 
             padding: 40px 20px; 
             max-width: 900px; 
             margin: auto; 
         }
 
+        /* Forces Justified Text */
         p, li { 
             text-align: justify !important; 
             text-justify: inter-word; 
         }
 
-        /* 2. HEADINGS (Fixing the Centering issue) */
+        /* Keeps Headers Left-Aligned */
         h2, h3 { 
             text-align: left !important; 
             margin-top: 2rem;
+            color: var(--primary);
         }
 
-        /* 3. HERO SECTION (This stays centered) */
+        /* Hero section centered */
         .hero { 
             text-align: center !important; 
             padding: 40px 0; 
             border-bottom: 1px solid #e1e1e1; 
         }
-        .hero h1, .hero p { 
-            text-align: center !important; 
-        }
+        .hero h1, .hero p { text-align: center !important; }
 
-        /* 4. DESIGN ELEMENTS */
         .tag { 
             background: #eef2f7; 
             padding: 5px 12px; 
@@ -48,24 +46,20 @@
         }
         .project-card { 
             border: 1px solid #eee; 
-            padding: 20px; 
+            padding: 25px; 
             border-radius: 10px; 
-            margin-bottom: 20px; 
+            margin-bottom: 25px; 
             text-align: left !important;
         }
-        .highlight { color: #d32f2f; font-weight: bold; }
         
         img.profile-pic {
-            width: 150px; 
-            height: 150px; 
-            border-radius: 50%; 
-            object-fit: cover; 
-            margin-bottom: 20px; 
-            border: 3px solid #1a5fb4; 
-            display: block; 
-            margin-left: auto; 
-            margin-right: auto;
+            width: 160px; height: 160px; 
+            border-radius: 50%; object-fit: cover; 
+            margin-bottom: 20px; border: 4px solid #1a5fb4; 
+            display: block; margin-left: auto; margin-right: auto;
         }
+
+        .button-group { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 15px; }
     </style>
 </head>
 <body>
@@ -73,9 +67,9 @@
     <header class="hero">
         <img src="profile.jpeg" alt="Mahsa Vian" class="profile-pic">
         <h1>Mahsa Vian</h1>
-        <p><strong>Visiting Scholar, University of Vienna</strong><br>
-        Interdisciplinary Researcher in Science & Technology Studies (STS) | Digital Pedagogy Specialist</p>
-        <div style="margin-top: 20px;">
+        <p><strong>Architect of Digital Knowledge Cultures</strong><br>
+        Researcher in Science & Technology Studies | 12 Years Pedagogical Experience</p>
+        <div class="button-group" style="justify-content: center;">
             <a href="mailto:vianmahsa@gmail.com" role="button">Email Me</a>
             <a href="CV_Mahsa_Vian.pdf" role="button" class="secondary" target="_blank">Download CV (PDF)</a>
         </div>
@@ -84,49 +78,32 @@
     <main>
         <section id="about">
             <h2>The Narrative</h2>
-            <p>I am a researcher and educator with <strong>12 years of pedagogical experience</strong>, specializing in the <em>Social Science of Knowledge Infrastructures</em>. My research explores the <strong>"Mobility of Knowledge"</strong>—specifically how informal, underground technical expertise (BBS/Hacker Culture) transitions into formal academic institutions.</p>
-            <p>Currently based in Vienna, I am investigating how <strong>Academic Capitalism</strong> influences the assessment of digital expertise.</p>
+            <p>I am a researcher and educator bridging <strong>12 years of pedagogical practice</strong> with a scholarly focus on the "underground" origins of our digital world. My research is defined by a singular question: <strong>How does expertise survive the transition from informal, radical spaces to formal institutional structures?</strong></p>
+            <p>My work is anchored in my Master’s research at the <strong>University of Padua</strong>, where I conducted a socio-technical autopsy of the pre-web digital underground. My thesis, <em>"From BBS to Blackboard,"</em> utilized digital discourse analysis to map how <strong>Phrack Magazine</strong> functioned as an alternative university for a generation of hackers.</p>
         </section>
 
         <section id="projects">
             <h2>Key Research & Digital Works</h2>
             
-           <div class="project-card">
-    <h3>From BBS to Blackboard (Master Thesis)</h3>
-    <span class="tag">STS</span> <span class="tag">Digital Discourse Analysis</span> <span class="tag">Hacker Culture</span>
-    <p>
-        A socio-technical analysis of <em>Phrack Magazine</em> (1985-2016). This project investigated how early digital forums functioned as <strong>alternative epistemic cultures</strong>, mapping the co-production of technical expertise before the era of formal cybersecurity education.
-    </p>
-    <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-        <a href="https://github.com/mahsavian/phrack-bbs-research" target="_blank" role="button" style="font-size: 0.8rem; padding: 10px 20px;">
-            📂 View Research Hub (PDF + PPT)
-        </a>
-        <a href="https://thesis.unipd.it/handle/20.500.12608/91258" target="_blank" role="button" class="outline" style="font-size: 0.8rem; padding: 10px 20px;">
-            🏛️ University Archive
-        </a>
-    </div>
-</div>
+            <div class="project-card">
+                <h3>From BBS to Blackboard (Master Thesis)</h3>
+                <span class="tag">STS</span> <span class="tag">Digital Discourse Analysis</span> <span class="tag">Hacker Culture</span>
+                <p>A socio-technical analysis of <em>Phrack Magazine</em>. This project mapped the "pedagogy of the exploit" and the co-production of technical expertise before the era of formal cybersecurity education.</p>
+                <div class="button-group">
+                    <a href="https://github.com/mahsavian/phrack-bbs-research" target="_blank" role="button" style="font-size: 0.8rem;">
+                        📂 View Research Hub (PDF + PPT)
+                    </a>
+                    <a href="https://thesis.unipd.it/handle/20.500.12608/91258" target="_blank" role="button" class="outline" style="font-size: 0.8rem;">
+                        🏛️ University Archive
+                    </a>
+                </div>
+            </div>
 
             <div class="project-card">
                 <h3>Theological Studies Online Museum</h3>
-                <span class="tag">HTML/CSS</span> <span class="tag">UX Design</span> <span class="tag">Public Engagement</span>
-                <p><span class="highlight">Award: 30/30 Grade.</span> Designed an interactive digital exhibit bridging historical theological archives with modern tourism. A proof-of-concept for <strong>innovative teaching</strong> and societal engagement through digital platforms.</p>
+                <span class="tag">HTML/CSS</span> <span class="tag">UX Design</span>
+                <p>Designed an interactive digital exhibit bridging historical theological archives with public engagement. Awarded <strong>30/30</strong> for innovative digital pedagogy.</p>
             </div>
-
-            <div class="project-card">
-                <h3>Social Justice Mapping (ArcGIS)</h3>
-                <span class="tag">Big Data</span> <span class="tag">NAGPRA</span> <span class="tag">Geospatial Analysis</span>
-                <p>Visualized the American Indian Repatriation Movement using ArcGIS. This project analyzed the intersection of <strong>environmental history</strong>, legal policy, and digital data management.</p>
-            </div>
-        </section>
-
-        <section id="teaching">
-            <h2>Pedagogical Innovation</h2>
-            <ul>
-                <li><strong>12+ Years Experience:</strong> From language instruction to Pedagogical Management at Shenker and Twenix.</li>
-                <li><strong>Certifications:</strong> TESOL (120h), Digital Higher Education (Dublin City University), and Big Data for Social Sciences.</li>
-                <li><strong>AI Integration:</strong> Expert in designing curricula that ethically integrate AI and digital tools into the classroom.</li>
-            </ul>
         </section>
     </main>
 
