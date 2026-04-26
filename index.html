@@ -8,14 +8,24 @@
     <style>
         :root { --primary: #1a5fb4; }
         body { padding: 40px 20px; max-width: 900px; margin: auto; }
-        p, li { text-align: justify !important; text-justify: inter-word; }
-        h2, h3 { text-align: left !important; margin-top: 2rem; color: var(--primary); }
-        .hero { text-align: center !important; padding: 40px 0; border-bottom: 1px solid #e1e1e1; }
-        .hero h1, .hero p { text-align: center !important; }
-        .tag { background: #eef2f7; padding: 5px 12px; border-radius: 5px; font-size: 0.8rem; margin-right: 5px; color: #1a5fb4; font-weight: bold; }
-        .project-card { border: 1px solid #eee; padding: 25px; border-radius: 10px; margin-bottom: 25px; text-align: left !important; }
-        img.profile-pic { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; border: 4px solid #1a5fb4; display: block; margin-left: auto; margin-right: auto; }
-        .button-group { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 15px; }
+        
+        /* Modern Card Styling */
+        .project-card { 
+            border: 1px solid #e1e1e1; 
+            padding: 30px; 
+            border-radius: 12px; 
+            margin-bottom: 30px; 
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .project-card:hover { 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
+        }
+
+        h2, h3 { color: var(--primary); margin-top: 2rem; }
+        .hero { text-align: center; padding: 60px 0; border-bottom: 2px solid #eee; margin-bottom: 40px; }
+        .tag { background: #eef2f7; padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; margin-right: 5px; color: #1a5fb4; font-weight: bold; text-transform: uppercase; }
+        .profile-pic { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; border: 4px solid #1a5fb4; }
+        .button-group { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 20px; }
     </style>
 </head>
 <body>
@@ -43,12 +53,10 @@
             <div class="project-card">
                 <h3>From BBS to Blackboard: The Pedagogy of the Exploit</h3>
                 <span class="tag">STS</span> <span class="tag">Corpus Linguistics</span> <span class="tag">Voyant Tools</span>
-                <p>
-                    This research evaluates technical knowledge transfer through a longitudinal analysis of <strong>Phrack Magazine</strong>. Utilizing <strong>Voyant Tools</strong>, the study maps how technical identity is negotiated within decentralized networks. The analysis defines hacker rhetoric as a structured, high-stakes instructional system.
-                </p>
+                <p>This research evaluates technical knowledge transfer through a longitudinal analysis of <strong>Phrack Magazine</strong>. Utilizing <strong>Voyant Tools</strong>, the study maps how technical identity is negotiated within decentralized networks. The analysis defines hacker rhetoric as a structured, high-stakes instructional system.</p>
                 <div class="button-group">
-                    <a href="https://raw.githubusercontent.com/mahsavian/phrack-bbs-research/main/Thesis_Vian_Phrack_BBS.pdf" target="_blank" role="button" style="font-size: 0.8rem;">📄 Thesis (PDF)</a>
-                    <a href="https://raw.githubusercontent.com/mahsavian/phrack-bbs-research/main/Presentation_Vian_Hacker_Pedagogy.pdf" target="_blank" role="button" class="secondary" style="font-size: 0.8rem;">📊 Presentation (PDF)</a>
+                    <a href="https://raw.githubusercontent.com/mahsavian/phrack-bbs-research/main/Thesis_Vian_Phrack_BBS.pdf" target="_blank" role="button" class="outline" style="font-size: 0.8rem;">📄 Thesis</a>
+                    <a href="https://raw.githubusercontent.com/mahsavian/phrack-bbs-research/main/Presentation_Vian_Hacker_Pedagogy.pdf" target="_blank" role="button" class="outline" style="font-size: 0.8rem;">📊 Presentation</a>
                     <a href="https://thesis.unipd.it/handle/20.500.12608/91258" target="_blank" role="button" class="outline" style="font-size: 0.8rem;">🏛️ Archive</a>
                 </div>
             </div>
@@ -57,38 +65,32 @@
                 <h3>Geospatial Analysis: Non-EU Residences in Italy</h3>
                 <span class="tag">ArcGIS</span> <span class="tag">Demographics</span>
                 <p>Developed an interactive ArcGIS dashboard visualizing the demographic distribution and legal status of non-EU residents in Italy for 2021.</p>
-                <img src="ezgif.com-animated-gif-maker.gif" alt="ArcGIS Dashboard Preview" style="width: 100%; border-radius: 8px; margin-top: 15px;">
+                <img src="ezgif.com-animated-gif-maker.gif" alt="ArcGIS Dashboard Preview" style="width: 100%; border-radius: 8px; margin-top: 15px; border: 1px solid #eee;">
             </div>
 
             <div class="project-card">
                 <h3>The Museum of Halal Tourism</h3>
                 <span class="tag">Digital Pedagogy</span> <span class="tag">STS</span> <span class="tag">Front-End Dev</span>
-                <p>
-                    An interactive digital archive investigating the sociotechnical infrastructure of religious mobility. This exhibit maps the historical foundations and modern regulatory landscapes of halal tourism. Awarded <strong>30/30</strong> for technical execution and theoretical depth.
-                </p>
+                <p>An interactive digital archive investigating the sociotechnical infrastructure of religious mobility. This exhibit maps the historical foundations and modern regulatory landscapes of halal tourism. Awarded <strong>30/30</strong> for technical execution and theoretical depth.</p>
                 <div class="button-group">
-                    <a href="https://mahsavian.github.io/museum-halal-tourism/index.html" target="_blank" role="button" style="font-size: 0.8rem;">🏛️ View Live Museum</a>
-                    <a href="https://mahsavian.github.io/museum-halal-tourism/index.html" target="_blank" role="button" class="outline" style="font-size: 0.8rem;">📂 View Source Code</a>
+                    <a href="https://mahsavian.github.io/museum-halal-tourism/index.html" target="_blank" role="button" class="outline" style="font-size: 0.8rem;">🏛️ View Museum</a>
+                    <a href="https://mahsavian.github.io/museum-halal-tourism/index.html" target="_blank" role="button" class="outline" style="font-size: 0.8rem;">📂 Source Code</a>
                 </div>
             </div>
 
             <div class="project-card">
                 <h3>NAGPRA as a cultural encounter</h3>
                 <span class="tag">STS</span> <span class="tag">Cultural Heritage</span> <span class="tag">Policy Analysis</span>
-                <p>
-                    An analytical review of Kathleen S. Fine-Dare's <em>Grave Injustice</em>. This paper explores the repatriation movement as a profound cultural encounter, examining how legal frameworks like NAGPRA intersect with the ongoing struggle for indigenous rights, cultural preservation, and historical justice.
-                </p>
+                <p>An analytical review of Kathleen S. Fine-Dare's <em>Grave Injustice</em>. This paper explores the repatriation movement as a profound cultural encounter, examining how legal frameworks like NAGPRA intersect with the ongoing struggle for indigenous rights, cultural preservation, and historical justice.</p>
                 <div class="button-group">
-                    <a href="NAGPRA%20as%20a%20cultural%20encounter.pdf" target="_blank" role="button" class="secondary" style="font-size: 0.8rem;">📥 Download/Read PDF</a>
+                    <a href="NAGPRA%20as%20a%20cultural%20encounter.pdf" target="_blank" role="button" class="secondary" style="font-size: 0.8rem;">📥 Download PDF</a>
                 </div>
             </div>
 
             <div class="project-card">
                 <h3>Shapes of Educational Gender Discrimination in Iran</h3>
                 <span class="tag">STS</span> <span class="tag">Gender Studies</span> <span class="tag">Education Policy</span>
-                <p>
-                    A critical analysis examining systemic educational gender discrimination in Iran. This research investigates disparities in educational access, bias within school textbooks, and sociocultural barriers.
-                </p>
+                <p>A critical analysis examining systemic educational gender discrimination in Iran. This research investigates disparities in educational access, bias within school textbooks, and sociocultural barriers imposed by traditional and political structures.</p>
                 <div class="button-group">
                     <a href="Shapes%20of%20Educational%20Gender%20Discrimination%20in%20Iran.pdf" target="_blank" role="button" class="secondary" style="font-size: 0.8rem;">📥 Download Paper</a>
                     <a href="Shapes%20of%20Educational%20Gender%20Discrimination%20in%20Iran-presentation%20catalogue.pdf" target="_blank" role="button" class="secondary" style="font-size: 0.8rem;">📊 Download Presentation</a>
