@@ -9,23 +9,43 @@
         :root { --primary: #1a5fb4; }
         body { padding: 40px 20px; max-width: 900px; margin: auto; }
         
-        /* Modern Card Styling */
+        /* Academic Polish */
+        p, li { text-align: justify !important; text-justify: inter-word; line-height: 1.6; }
+        h2, h3 { color: var(--primary); margin-top: 2rem; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        
+        .hero { text-align: center; padding: 60px 0; border-bottom: 2px solid #eee; margin-bottom: 40px; }
+        .hero h1 { margin-bottom: 0.5rem; }
+        .hero p { text-align: center !important; font-size: 1.1rem; }
+
+        /* Project Cards */
         .project-card { 
             border: 1px solid #e1e1e1; 
-            padding: 30px; 
+            padding: 35px; 
             border-radius: 12px; 
-            margin-bottom: 30px; 
+            margin-bottom: 40px; 
+            background: #fff;
             transition: transform 0.2s, box-shadow 0.2s;
         }
         .project-card:hover { 
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08); 
+            transform: translateY(-2px);
         }
 
-        h2, h3 { color: var(--primary); margin-top: 2rem; }
-        .hero { text-align: center; padding: 60px 0; border-bottom: 2px solid #eee; margin-bottom: 40px; }
-        .tag { background: #eef2f7; padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; margin-right: 5px; color: #1a5fb4; font-weight: bold; text-transform: uppercase; }
-        .profile-pic { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; border: 4px solid #1a5fb4; }
-        .button-group { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 20px; }
+        .tag { 
+            background: #eef2f7; 
+            padding: 4px 12px; 
+            border-radius: 4px; 
+            font-size: 0.7rem; 
+            margin-right: 8px; 
+            color: #1a5fb4; 
+            font-weight: bold; 
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .profile-pic { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; margin-bottom: 25px; border: 5px solid #1a5fb4; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .button-group { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 25px; }
+        .btn-small { font-size: 0.8rem !important; padding: 8px 16px !important; }
     </style>
 </head>
 <body>
@@ -33,8 +53,10 @@
     <header class="hero">
         <img src="profile.jpeg" alt="Mahsa Vian" class="profile-pic">
         <h1>Mahsa Vian</h1>
-        <p><strong>Interdisciplinary Researcher of Knowledge Cultures</strong><br>
-        Researcher in Science & Technology Studies | 12 Years Pedagogical Experience</p>
+        <p>
+            <strong>Scholar of Socio-technical Infrastructures & Digital Knowledge Cultures</strong><br>
+            Researcher in Science & Technology Studies | 12 Years of Pedagogical Practice
+        </p>
         <div class="button-group" style="justify-content: center;">
             <a href="mailto:vianmahsa@gmail.com" role="button">Email Me</a>
             <a href="resume-vian.pdf" role="button" class="secondary" target="_blank">Download CV (PDF)</a>
@@ -44,64 +66,80 @@
     <main>
         <section id="about">
             <h2>The Narrative</h2>
-            <p>I am a researcher and educator bridging <strong>12 years of pedagogical practice</strong> with a scholarly focus on the "underground" origins of our digital world. My research investigates how expertise survives the transition from informal, radical spaces to formal institutional structures.</p>
+            <p>
+                As a researcher and educator with a 12-year background in pedagogical practice, 
+                <strong>I bridge digital humanities methodology with the study of science cultures</strong>. 
+                Using spatial and discursive mapping, I explore how researchers and communities orient their 
+                practices within the environmental and political "poly-crisis." My work investigates 
+                how expertise is negotiated and survives the transition from informal, radical spaces to 
+                formal institutional structures.
+            </p>
         </section>
 
         <section id="projects">
             <h2>Research & Digital Works</h2>
-            
+
+            <div class="project-card">
+                <h3>The Museum of Halal Tourism</h3>
+                <span class="tag">Digital Pedagogy</span> <span class="tag">STS</span> <span class="tag">Front-End Dev</span>
+                <p>
+                    An interactive digital archive investigating the sociotechnical infrastructure of religious mobility. 
+                    This exhibit maps the historical foundations and modern regulatory landscapes of halal tourism, 
+                    performing an "infrastructural inversion" of religious knowledge. 
+                    <strong>Awarded 30/30</strong> for technical execution and theoretical depth.
+                </p>
+                <div class="button-group">
+                    <a href="https://mahsavian.github.io/museum-halal-tourism/" target="_blank" role="button" class="btn-small">🏛️ View Live Museum</a>
+                    <a href="https://github.com/mahsavian/museum-halal-tourism" target="_blank" role="button" class="outline btn-small">📂 Source Code</a>
+                </div>
+            </div>
+
             <div class="project-card">
                 <h3>From BBS to Blackboard: The Pedagogy of the Exploit</h3>
                 <span class="tag">STS</span> <span class="tag">Corpus Linguistics</span> <span class="tag">Voyant Tools</span>
-                <p>This research evaluates technical knowledge transfer through a longitudinal analysis of <strong>Phrack Magazine</strong>. Utilizing <strong>Voyant Tools</strong>, the study maps how technical identity is negotiated within decentralized networks. The analysis defines hacker rhetoric as a structured, high-stakes instructional system.</p>
+                <p>
+                    A longitudinal analysis of <strong>Phrack Magazine</strong> evaluating technical knowledge transfer. 
+                    By mapping hacker rhetoric as a structured instructional system, this study defines how 
+                    technical identity is negotiated within decentralized, high-stakes networks.
+                </p>
                 <div class="button-group">
-                    <a href="https://raw.githubusercontent.com/mahsavian/phrack-bbs-research/main/Thesis_Vian_Phrack_BBS.pdf" target="_blank" role="button" class="outline" style="font-size: 0.8rem;">📄 Thesis</a>
-                    <a href="https://raw.githubusercontent.com/mahsavian/phrack-bbs-research/main/Presentation_Vian_Hacker_Pedagogy.pdf" target="_blank" role="button" class="outline" style="font-size: 0.8rem;">📊 Presentation</a>
-                    <a href="https://thesis.unipd.it/handle/20.500.12608/91258" target="_blank" role="button" class="outline" style="font-size: 0.8rem;">🏛️ Archive</a>
+                    <a href="https://raw.githubusercontent.com/mahsavian/phrack-bbs-research/main/Thesis_Vian_Phrack_BBS.pdf" target="_blank" role="button" class="outline btn-small">📄 Thesis (PDF)</a>
+                    <a href="https://raw.githubusercontent.com/mahsavian/phrack-bbs-research/main/Presentation_Vian_Hacker_Pedagogy.pdf" target="_blank" role="button" class="outline btn-small">📊 Presentation</a>
+                    <a href="https://thesis.unipd.it/handle/20.500.12608/91258" target="_blank" role="button" class="outline btn-small">🏛️ University Archive</a>
                 </div>
             </div>
 
             <div class="project-card">
                 <h3>Geospatial Analysis: Non-EU Residences in Italy</h3>
-                <span class="tag">ArcGIS</span> <span class="tag">Demographics</span>
-                <p>Developed an interactive ArcGIS dashboard visualizing the demographic distribution and legal status of non-EU residents in Italy for 2021.</p>
+                <span class="tag">ArcGIS</span> <span class="tag">Demographics</span> <span class="tag">Spatial Mapping</span>
+                <p>Developed an interactive ArcGIS dashboard visualizing the demographic distribution and legal status of non-EU residents in Italy for 2021. This project utilizes spatial mapping to observe the intersections of political boundaries and migrant mobility.</p>
                 <img src="ezgif.com-animated-gif-maker.gif" alt="ArcGIS Dashboard Preview" style="width: 100%; border-radius: 8px; margin-top: 15px; border: 1px solid #eee;">
             </div>
 
             <div class="project-card">
-                <h3>The Museum of Halal Tourism</h3>
-                <span class="tag">Digital Pedagogy</span> <span class="tag">STS</span> <span class="tag">Front-End Dev</span>
-                <p>An interactive digital archive investigating the sociotechnical infrastructure of religious mobility. This exhibit maps the historical foundations and modern regulatory landscapes of halal tourism. Awarded <strong>30/30</strong> for technical execution and theoretical depth.</p>
-                <div class="button-group">
-                    <a href="https://mahsavian.github.io/museum-halal-tourism/index.html" target="_blank" role="button" class="outline" style="font-size: 0.8rem;">🏛️ View Museum</a>
-                    <a href="https://mahsavian.github.io/museum-halal-tourism/index.html" target="_blank" role="button" class="outline" style="font-size: 0.8rem;">📂 Source Code</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <h3>NAGPRA as a cultural encounter</h3>
+                <h3>NAGPRA as a Cultural Encounter</h3>
                 <span class="tag">STS</span> <span class="tag">Cultural Heritage</span> <span class="tag">Policy Analysis</span>
-                <p>An analytical review of Kathleen S. Fine-Dare's <em>Grave Injustice</em>. This paper explores the repatriation movement as a profound cultural encounter, examining how legal frameworks like NAGPRA intersect with the ongoing struggle for indigenous rights, cultural preservation, and historical justice.</p>
+                <p>An analytical review of Kathleen S. Fine-Dare's <em>Grave Injustice</em>. This paper explores the repatriation movement as a profound cultural encounter, examining how legal frameworks like NAGPRA intersect with the struggle for indigenous rights and historical justice.</p>
                 <div class="button-group">
-                    <a href="NAGPRA%20as%20a%20cultural%20encounter.pdf" target="_blank" role="button" class="secondary" style="font-size: 0.8rem;">📥 Download PDF</a>
+                    <a href="NAGPRA%20as%20a%20cultural%20encounter.pdf" target="_blank" role="button" class="secondary btn-small">📥 Download Paper (PDF)</a>
                 </div>
             </div>
 
             <div class="project-card">
-                <h3>Shapes of Educational Gender Discrimination in Iran</h3>
-                <span class="tag">STS</span> <span class="tag">Gender Studies</span> <span class="tag">Education Policy</span>
-                <p>A critical analysis examining systemic educational gender discrimination in Iran. This research investigates disparities in educational access, bias within school textbooks, and sociocultural barriers imposed by traditional and political structures.</p>
+                <h3>Educational Gender Discrimination in Iran</h3>
+                <span class="tag">Gender Studies</span> <span class="tag">Education Policy</span> <span class="tag">Discursive Analysis</span>
+                <p>A critical investigation into systemic gender discrimination within the Iranian educational apparatus. This research analyzes disparities in access, bias within school textbooks, and the sociocultural barriers imposed by political structures.</p>
                 <div class="button-group">
-                    <a href="Shapes%20of%20Educational%20Gender%20Discrimination%20in%20Iran.pdf" target="_blank" role="button" class="secondary" style="font-size: 0.8rem;">📥 Download Paper</a>
-                    <a href="Shapes%20of%20Educational%20Gender%20Discrimination%20in%20Iran-presentation%20catalogue.pdf" target="_blank" role="button" class="secondary" style="font-size: 0.8rem;">📊 Download Presentation</a>
+                    <a href="Shapes%20of%20Educational%20Gender%20Discrimination%20in%20Iran.pdf" target="_blank" role="button" class="secondary btn-small">📄 Read Paper</a>
+                    <a href="Shapes%20of%20Educational%20Gender%20Discrimination%20in%20Iran-presentation%20catalogue.pdf" target="_blank" role="button" class="secondary btn-small">📊 View Presentation</a>
                 </div>
             </div>
 
         </section>
     </main>
 
-    <footer style="text-align: center; padding: 40px 0; border-top: 1px solid #eee;">
-        <small>© 2026 Mahsa Vian | Built with GitHub Pages</small>
+    <footer style="text-align: center; padding: 60px 0; border-top: 1px solid #eee; margin-top: 40px;">
+        <small>© 2026 Mahsa Vian | Scholar of Digital Knowledge Cultures | Built with GitHub Pages</small>
     </footer>
 
 </body>
