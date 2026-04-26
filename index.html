@@ -10,7 +10,7 @@
         body { padding: 40px 20px; max-width: 900px; margin: auto; }
         
         p, li { text-align: justify !important; text-justify: inter-word; line-height: 1.6; }
-        h2, h3 { color: var(--primary); margin-top: 2rem; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        h2, h3 { color: var(--primary); margin-top: 2.5rem; border-bottom: 1px solid #eee; padding-bottom: 10px; }
         
         .hero { text-align: center; padding: 60px 0; border-bottom: 2px solid #eee; margin-bottom: 40px; }
         .hero h1 { margin-bottom: 0.5rem; }
@@ -44,6 +44,10 @@
         .profile-pic { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; margin-bottom: 25px; border: 5px solid #1a5fb4; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
         .button-group { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 25px; }
         .btn-small { font-size: 0.8rem !important; padding: 8px 16px !important; }
+
+        /* Reference Section Grid */
+        .ref-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 20px; }
+        .ref-item { padding: 15px; border-left: 3px solid var(--primary); background: #f9f9f9; border-radius: 0 8px 8px 0; }
     </style>
 </head>
 <body>
@@ -78,17 +82,11 @@
             <h2>Research & Digital Works</h2>
 
             <div class="project-card">
-                <h3>From BBS to Blackboard: Knowledge Sharing in PHRACK</h3>
+                <h3>From BBS to Blackboard: The Pedagogy of the Exploit</h3>
                 <span class="tag">STS</span> <span class="tag">Corpus Linguistics</span> <span class="tag">Voyant Tools</span>
-                <p>
-                    A longitudinal analysis of <strong>Phrack Magazine</strong> evaluating technical knowledge transfer. 
-                    By mapping hacker rhetoric as a structured instructional system, this study defines how 
-                    technical identity is negotiated within decentralized, high-stakes networks. This work 
-                    highlights the pedagogical "underground" as a site of rigorous epistemic formation.
-                </p>
+                <p>A longitudinal analysis of <strong>Phrack Magazine</strong> evaluating technical knowledge transfer. By mapping hacker rhetoric as a structured instructional system, this study defines how technical identity is negotiated within decentralized, high-stakes networks.</p>
                 <div class="button-group">
                     <a href="https://raw.githubusercontent.com/mahsavian/phrack-bbs-research/main/Thesis_Vian_Phrack_BBS.pdf" target="_blank" role="button" class="btn-small">📄 Thesis (PDF)</a>
-                    <a href="https://raw.githubusercontent.com/mahsavian/phrack-bbs-research/main/Presentation_Vian_Hacker_Pedagogy.pdf" target="_blank" role="button" class="outline btn-small">📊 Presentation</a>
                     <a href="https://thesis.unipd.it/handle/20.500.12608/91258" target="_blank" role="button" class="outline btn-small">🏛️ University Archive</a>
                 </div>
             </div>
@@ -96,43 +94,51 @@
             <div class="project-card">
                 <h3>The Museum of Halal Tourism</h3>
                 <span class="tag">Digital Pedagogy</span> <span class="tag">STS</span> <span class="tag">Front-End Dev</span>
-                <p>
-                    An interactive digital archive investigating the sociotechnical infrastructure of religious mobility. 
-                    This exhibit performs an "infrastructural inversion" of religious knowledge, mapping historical 
-                    foundations alongside modern regulatory landscapes. 
-                    <strong>Awarded 30/30</strong> for technical execution and theoretical depth.
-                </p>
+                <p>An interactive digital archive investigating the sociotechnical infrastructure of religious mobility. This exhibit performs an "infrastructural inversion" of religious knowledge. <strong>Awarded 30/30</strong> for technical execution and theoretical depth.</p>
                 <div class="button-group">
                     <a href="https://mahsavian.github.io/museum-halal-tourism/" target="_blank" role="button" class="btn-small">🏛️ View Live Museum</a>
-                    <a href="https://github.com/mahsavian/museum-halal-tourism" target="_blank" role="button" class="outline btn-small">📂 Source Code</a>
                 </div>
             </div>
 
             <div class="project-card">
                 <h3>Geospatial Analysis: Non-EU Residences in Italy</h3>
-                <span class="tag">ArcGIS</span> <span class="tag">Demographics</span> <span class="tag">Spatial Mapping</span>
-                <p>An interactive ArcGIS dashboard visualizing the demographic distribution and legal status of non-EU residents in Italy. This project utilizes spatial mapping to observe the intersections of political boundaries and migrant mobility.</p>
+                <span class="tag">ArcGIS</span> <span class="tag">Spatial Mapping</span>
+                <p>An interactive dashboard visualizing the demographic distribution and legal status of non-EU residents in Italy, observing the intersections of political boundaries and migrant mobility.</p>
                 <img src="ezgif.com-animated-gif-maker.gif" alt="ArcGIS Dashboard Preview" style="width: 100%; border-radius: 8px; margin-top: 15px; border: 1px solid #eee;">
             </div>
 
             <div class="project-card">
                 <h3>NAGPRA as a Cultural Encounter</h3>
-                <span class="tag">STS</span> <span class="tag">Cultural Heritage</span> <span class="tag">Policy Analysis</span>
-                <p>An analytical review of Kathleen S. Fine-Dare's <em>Grave Injustice</em>. This paper explores the repatriation movement as a profound cultural encounter, examining how legal frameworks intersect with indigenous rights and historical justice.</p>
+                <span class="tag">Cultural Heritage</span> <span class="tag">Policy Analysis</span>
+                <p>An analytical review of Kathleen S. Fine-Dare's <em>Grave Injustice</em>, examining how legal frameworks intersect with indigenous rights and historical justice.</p>
                 <div class="button-group">
                     <a href="NAGPRA%20as%20a%20cultural%20encounter.pdf" target="_blank" role="button" class="secondary btn-small">📥 Download Paper (PDF)</a>
                 </div>
             </div>
+        </section>
 
-            <div class="project-card">
-                <h3>Educational Gender Discrimination in Iran</h3>
-                <span class="tag">Gender Studies</span> <span class="tag">Education Policy</span> <span class="tag">Discursive Analysis</span>
-                <p>A critical investigation into systemic gender discrimination within the Iranian educational apparatus, analyzing disparities in access and sociocultural barriers imposed by political structures.</p>
-                <div class="button-group">
-                    <a href="Shapes%20of%20Educational%20Gender%20Discrimination%20in%20Iran.pdf" target="_blank" role="button" class="secondary btn-small">📄 Read Paper</a>
+        <section id="mentors">
+            <h2>Research Mentors & References</h2>
+            <div class="ref-grid">
+                <div class="ref-item">
+                    <strong>Prof. Federico Mazzini</strong><br>
+                    <small>Thesis Supervisor</small><br>
+                    <small>University of Padua</small>
+                </div>
+                <div class="ref-item">
+                    <strong>Prof. Paola Monino</strong><br>
+                    <small>Head of Mobility Department</small><br>
+                    <small>University of Padua</small>
+                </div>
+                <div class="ref-item">
+                    <strong>Prof. Maria Teresa Milicia</strong><br>
+                    <small>Cultural Anthropology</small><br>
+                    <small>University of Padua</small>
                 </div>
             </div>
-
+            <p style="margin-top: 20px; font-size: 0.85rem; color: #666; font-style: italic;">
+                Full letters of recommendation and direct contact details are available upon request.
+            </p>
         </section>
     </main>
 
