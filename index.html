@@ -48,8 +48,10 @@
         /* Reference Section Grid */
         .ref-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 20px; }
         .ref-item { padding: 15px; border-left: 3px solid var(--primary); background: #f9f9f9; border-radius: 0 8px 8px 0; }
-        .ref-item a { text-decoration: none; color: inherit; }
-        .ref-item a:hover { color: var(--primary); text-decoration: underline; }
+        
+        /* Keeping links clean within the items */
+        .ref-item a { color: inherit; text-decoration: none; }
+        .ref-item a:hover { text-decoration: underline; color: var(--primary); }
     </style>
 </head>
 <body>
@@ -96,31 +98,4 @@
             <div class="project-card">
                 <h3>The Museum of Halal Tourism</h3>
                 <span class="tag">Digital Pedagogy</span> <span class="tag">STS</span> <span class="tag">Front-End Dev</span>
-                <p>An interactive digital archive investigating the sociotechnical infrastructure of religious mobility. This exhibit performs an "infrastructural inversion" of religious knowledge. <strong>Awarded 30/30</strong> for technical execution and theoretical depth.</p>
-                <div class="button-group">
-                    <a href="https://mahsavian.github.io/museum-halal-tourism/" target="_blank" role="button" class="btn-small">🏛️ View Live Museum</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <h3>Geospatial Analysis: Non-EU Residences in Italy</h3>
-                <span class="tag">ArcGIS</span> <span class="tag">Spatial Mapping</span>
-                <p>An interactive dashboard visualizing the demographic distribution and legal status of non-EU residents in Italy, observing the intersections of political boundaries and migrant mobility.</p>
-                <img src="ezgif.com-animated-gif-maker.gif" alt="ArcGIS Dashboard Preview" style="width: 100%; border-radius: 8px; margin-top: 15px; border: 1px solid #eee;">
-            </div>
-
-            <div class="project-card">
-                <h3>NAGPRA as a Cultural Encounter</h3>
-                <span class="tag">Cultural Heritage</span> <span class="tag">Policy Analysis</span>
-                <p>An analytical review of Kathleen S. Fine-Dare's <em>Grave Injustice</em>, examining how legal frameworks intersect with indigenous rights and historical justice.</p>
-                <div class="button-group">
-                    <a href="NAGPRA%20as%20a%20cultural%20encounter.pdf" target="_blank" role="button" class="secondary btn-small">📥 Download Paper (PDF)</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="mentors">
-            <h2>Research Mentors & References</h2>
-            <div class="ref-grid">
-                <div class="ref-item">
-                    <strong><a href="https://www.sissco.
+                <p>An interactive digital archive investigating the sociotechnical infrastructure of religious mobility. This exhibit performs an "infrastructural inversion" of religious knowledge. <strong>Awarded 30/30</strong> for technical execution and theoretical depth.</p
